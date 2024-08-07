@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block title %}
+    
+    {% endblock title %}
+    {% block css_file %}
+    
+    {% endblock css_file %}
+</head>
+<body>
+    {% block content %}
+    {% comment %} {% include "indico/header.html" %} {% endcomment %}
+    {% comment %} {% include "templates/indico/header.html" %} {% endcomment %}
+    
+    {% endblock content %}
+
+    {% block js_file %}
+    
+    {% endblock js_file %}
+</body>
+</html>
